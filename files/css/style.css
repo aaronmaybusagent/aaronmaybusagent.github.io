@@ -567,7 +567,7 @@
   background: #e7e7e7;
 }
 .grey_bg section .col-md-12 {
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 30px;
   margin-bottom: 30px;
   font-size: 14px;
