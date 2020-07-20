@@ -567,10 +567,10 @@
   background: #e7e7e7;
 }
 .grey_bg section .col-md-12 {
-  /*overflow: hidden;*/
-  height: 30px;
+  overflow: hidden;
   margin-bottom: 30px;
   font-size: 14px;
+  font-weight: 600;
 }
 .white_overlay {
   background: rgba(255, 255, 255, 0.92);
@@ -837,7 +837,6 @@ form .col-md-12 textarea {
 
 /*INSTAGRAM*/
 .instafeed {
-  height: 595px;
   overflow: hidden;
   display: block;
   margin: 0 auto;
@@ -845,14 +844,15 @@ form .col-md-12 textarea {
   padding-top: 15px;
   justify-content: center;
 }
-
-.instagram-img {
-  height: 175px;
+.instagram_gallery {
+  justify-content: center;
+}
+.instagram_gallery img {
+  height: auto;
   /*Stretch out photos that are too skinny*/
-  min-width: 175px;
+  margin: 0.5%;
   border-radius: 6px;
   /*transition: all 0.3s ease;*/
-  -webkit-perspective: 1000;
 }
 
 /*.instagram-img:hover { 
@@ -943,6 +943,10 @@ form .col-md-12 textarea {
 .copyright,
 .footer .col-md-12 p {
   font-size: 12px;   
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
 }
 .copyright {
   color: white;
@@ -1123,6 +1127,8 @@ body {
 .soundcloud_embed p {
   font-size: 12px;
 }
+
+
 /*-----------NAVBAR STYLES-------------*/
 /* Navbar */
 .navbar-default {
@@ -1629,6 +1635,10 @@ body {
   }
 }
 @media all and (max-width: 479px) {
+  .instagram_gallery img {
+    width: 47% !important;
+    margin: 1.5% 1.5% !important;
+  }
   .navbar-toggle {
     top: 0px;
     left: 23px;
