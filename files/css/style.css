@@ -561,16 +561,18 @@
   background: url('../img/text_bg.jpg');
 }
 .grey_bg {
-  background: #3b3b3b;
+  padding-top: 20px;
 }
 .white_bg {
   background: #e7e7e7;
 }
 .grey_bg section .col-md-12 {
   overflow: hidden;
+  height: 30px;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 600;
+  color: #9b9b9b;
 }
 .white_overlay {
   background: rgba(255, 255, 255, 0.92);
@@ -623,7 +625,7 @@
 .form-input {
   border-radius: 0px;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color: #ededed;
   color: #3b3b3b;
   width: 100%;
   height: 34px;
@@ -848,9 +850,7 @@ form .col-md-12 textarea {
   justify-content: center;
 }
 .instagram_gallery img {
-  height: auto;
-  /*Stretch out photos that are too skinny*/
-  margin: 0.5%;
+  height: 100%;
   border-radius: 6px;
   /*transition: all 0.3s ease;*/
 }
@@ -868,10 +868,10 @@ form .col-md-12 textarea {
   height: 175px;
   width: 175px;
   border-radius: 6px;
-  border: 2px solid white;
   overflow: hidden;
   display: inline-block;
   margin: 0 20px 20px 20px; 
+  transition: all 0.4s ease;
 }
 
 .insta-overlay {
@@ -943,10 +943,6 @@ form .col-md-12 textarea {
 .copyright,
 .footer .col-md-12 p {
   font-size: 12px;   
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 50px;
 }
 .copyright {
   color: white;
@@ -958,7 +954,6 @@ form .col-md-12 textarea {
 }
 .copyright {
   text-align: center;
-  opacity: 0.4;
 }
 .contact-icon {
   margin-right: 15px;
@@ -1106,7 +1101,6 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  padding: 40px 0 10px 0;
   font-weight: 600;
 }
 /*-------------SOUNDCLOUD EMBED--------*/
@@ -1521,6 +1515,11 @@ body {
   .contact-icon {
     margin-right: 8px;
   }
+  .instagram_gallery {
+    justify-content: center;
+    height: 995px;
+    overflow: hidden;
+  }
 }
 @media (max-width: 767px) {
   /*.bg_main {
@@ -1594,20 +1593,12 @@ body {
     /*border-radius: 6px;*/
   }
   .animation-container {
-    height: 150px;
-    width: 150px;
-    margin: 0;
-    margin-bottom: 2px;
+    height: 170px;
+    width: 170px;
+    margin: 0 0 5% 5%;
   }
   .instagram-img {
     height: 150px;
-  }
-  .instafeed {
-    width: 310px;
-    height: 975px;
-    grid-template-columns: 150px 150px;
-    grid-auto-rows: 150px;
-    margin-bottom: 45px;
   }
   .title-main {
     width: 352px;
@@ -1633,10 +1624,19 @@ body {
   .footer .col-md-12 p {
     font-size: 11px;
   }
+  .instagram_gallery {
+    height: 100%;
+    width: 420px;
+    margin: 0 auto;
+  }
 }
 @media all and (max-width: 479px) {
-  .instagram_gallery img {
-    width: 47% !important;
+  .instagram_gallery {
+    width: 320px;
+  }
+  .animation-container {
+    height: 150px;
+    width: 150px;
     margin: 1.5% 1.5% !important;
   }
   .navbar-toggle {
